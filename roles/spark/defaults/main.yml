@@ -13,7 +13,7 @@ spark:
 
   env_extras: {}
   defaults_extras: {}
-  defaults_extras_master: {"spark.eventLog.enabled":"true","spark.eventLog.dir":"file://{{ spark_history_dir }}","spark.history.fs.logDirectory":"file://{{ spark_history_dir }}","spark.eventLog.compress":"true","spark.history.fs.cleaner.enabled":"true","spark.history.fs.cleaner.interval":"1h","spark.history.fs.cleaner.maxAge":"4h","spark.history.fs.driverlog.cleaner.enabled":"true","spark.history.fs.driverlog.cleaner.interval":"1h", "spark.history.fs.driverlog.cleaner.maxAge":"4h"}
+  defaults_extras_master: {"spark.eventLog.enabled":"true","spark.eventLog.dir":"file://{{ spark_history_dir }}","spark.history.fs.logDirectory":"file://{{ spark_history_dir }}","spark.eventLog.compress":"true","spark.history.fs.cleaner.enabled":"true","spark.history.fs.cleaner.interval":"1h","spark.history.fs.cleaner.maxAge":"4h","spark.history.fs.driverlog.cleaner.enabled":"true","spark.history.fs.driverlog.cleaner.interval":"1h","spark.history.fs.driverlog.cleaner.maxAge":"4h"}
 
   defaults_extras_nodes: 
         - SPARK_WORKER_OPTS="-Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.appDataTtl=7200 -Dspark.worker.cleanup.interval=1800"

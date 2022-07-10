@@ -15,13 +15,12 @@ In order to have variable overriding from host inventory, please add the followi
 ```
 [defaults]
 host_key_checking = False
-hash_behaviour = merge
 ```
 
 ### Supported/Tested Platform
 
-* Ubuntu 18.04
-* Ansible 2.6.3
+* Ubuntu 20.04.3
+* Ansible 2.9.6
 
 
 # Defining your cluster deployment metadata (host inventory)
