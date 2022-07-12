@@ -84,4 +84,7 @@ In this scenario, a Standalone Spark cluster will be deployed with a few optiona
 
 ```
 Deploying
+
+```
 ansible-playbook --verbose <deployment playbook.yml> -i <hosts inventory>
+```
